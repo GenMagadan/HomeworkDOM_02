@@ -13,12 +13,17 @@ console.log(dropdownEl);
 // присутствует у этого элемента, либо добавить, если такого класса у элемента
 // не было.
 let btnEl = document.querySelector('.btn');
+// console.dir(btnEl);
 btnEl.classList.toggle('btn-secondary');
 // Добавляет класс элементу при отсутсвии искомого класса, или удаляет при наличии
 console.log(btnEl);
 
 // 3. Необходимо удалить класс "dropdown-menu" у элемента, у которого
 // присутствует класс "menu".
+let menuEl = document.querySelector('.menu');
+// console.dir(menuEl);
+menuEl.classList.remove('dropdown-menu');
+console.log(menuEl);
 
 // 4. Используя метод insertAdjacentHTML добавьте после div с классом "dropdown"
 // следующую разметку: `<a href="#">link</a>`
