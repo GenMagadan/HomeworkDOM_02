@@ -5,13 +5,17 @@ let dropdownEl = document.querySelectorAll('.dropdown-item');
 // console.dir(dropdownEl);
 
 dropdownEl.forEach(element => {
-   element.classList.add('.super-dropdown');
+   element.classList.add('super-dropdown');
 });
 console.log(dropdownEl);
 
 // 2. У элемента с классом btn необходимо убрать класс "btn-secondary", если он
 // присутствует у этого элемента, либо добавить, если такого класса у элемента
 // не было.
+let btnEl = document.querySelector('.btn');
+btnEl.classList.toggle('btn-secondary');
+// Добавляет класс элементу при отсутсвии искомого класса, или удаляет при наличии
+console.log(btnEl);
 
 // 3. Необходимо удалить класс "dropdown-menu" у элемента, у которого
 // присутствует класс "menu".
