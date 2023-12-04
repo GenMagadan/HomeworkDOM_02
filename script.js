@@ -28,11 +28,15 @@ console.log(menuEl);
 // 4. Используя метод insertAdjacentHTML добавьте после div с классом "dropdown"
 // следующую разметку: `<a href="#">link</a>`
 let divEl = document.querySelector('.dropdown');
-console.dir(divEl);
+// console.dir(divEl);
 divEl.insertAdjacentHTML('afterEnd', `<a href="#">link</a>`);
 
 
 // 5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
+let menuBtn = document.querySelector('#dropdownMenuButton');
+// console.dir(menuBtn);
+menuBtn.id = 'superDropdown';
+console.log(menuBtn);
 
 // 6. Добавьте атрибут data-dd со значением 3 элементу у которого существует
 // атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.
