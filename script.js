@@ -40,9 +40,13 @@ console.log(menuBtn);
 
 // 6. Добавьте атрибут data-dd со значением 3 элементу у которого существует
 // атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.
-let divAreaEl = document.querySelector('[aria-labelledby="dropdownMenuButton"]');
+let ariaLabelledbyEl = document.querySelector('[aria-labelledby="dropdownMenuButton"]');
 // console.dir(divAreaEl);
-divAreaEl.dataset.dd = 3;
-console.log(divAreaEl);
+ariaLabelledbyEl.dataset.dd = 3;
+console.log(ariaLabelledbyEl);
 
 // 7. Удалите атрибут type у элемента с классом "dropdown-toggle".
+let dropdownToggleEl = document.querySelector('.dropdown-toggle');
+// console.dir(dropdownToggleEl);
+dropdownToggleEl.removeAttribute('type');
+console.log(dropdownToggleEl);
